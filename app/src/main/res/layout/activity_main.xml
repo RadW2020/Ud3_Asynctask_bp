@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarea Asíncrona con barra de progreso"
+        android:id="@+id/textView" />
+
+
+    <Button
+        android:text="Iniciar tarea larga(más de 5 seg.)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="iniciaTarea"
+        android:id="@+id/button1" />
+
+    <Button
+        android:text="Cancelar tarea larga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cancelaTarea"
+        android:id="@+id/button2" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="visible"
+        android:id="@+id/progressBar" />
+</LinearLayout>
